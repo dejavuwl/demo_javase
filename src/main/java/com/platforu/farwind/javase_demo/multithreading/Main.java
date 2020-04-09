@@ -7,7 +7,7 @@ public class Main {
     }
 
     void addThreadWithRunnable(){
-        MyRunnable myRunnable = new MyRunnable();
+        MyRunnable myRunnable = new MyRunnable("MyThread");
         for (int i = 0; i < 1000; i++) {
             Thread t = new Thread(myRunnable);
             t.start();
